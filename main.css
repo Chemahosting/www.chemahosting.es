@@ -49,8 +49,9 @@ header a:hover{border-bottom: 3px solid white;}
 .bloque_mapa_red .IPs span, .bloque_mapa_red .servicio .derecha span{color: rgb(146, 147, 148); user-select: all;}
 .bloque_mapa_red .recuadro{border: 1px solid transparent; display: flex; flex-direction: column; gap: 20px; padding: 20px;}
 .bloque_mapa_red .recuadro_nodo{border-color: gray;}
-.bloque_mapa_red .recuadro_servicio{border-color: rgb(82, 82, 82); display: flex; flex-direction: row; justify-content: space-between;}
+.bloque_mapa_red .recuadro_servicio{border-color: rgb(82, 82, 82);}
 .bloque_mapa_red .recuadro_servicio:hover{border-color: lightblue !important;}
+.bloque_mapa_red .recuadro_servicio .arriba{display: flex; flex-direction: row; justify-content: space-between;}
 .bloque_mapa_red .recuadro_servicio .izquierda{text-align: left; display: flex; flex-direction: column; gap: 10px;}
 .bloque_mapa_red .recuadro_servicio .derecha{text-align: right; display: flex; flex-direction: column; justify-content: center;}
 

@@ -40,25 +40,49 @@
 
                         <p style="text-align: left;">Servicio(s):</p>
                         <div class="servicio recuadro recuadro_servicio">
-                            <div class="izquierda">
-                                <p>favonia/cloudflare-ddns</p>
-                            </div>
-                            <div class="derecha">
-                                <p>IP local: <span>DHCP</span></p>
-                                <p>Tipo: <span>Docker</span></p>
+                            <div class="arriba">
+                                <div class="izquierda">
+                                    <p>favonia/cloudflare-ddns</p>
+                                </div>
+                                <div class="derecha">
+                                    <p>Tipo: <span>Docker</span></p>
+                                </div>
                             </div>
                         </div>
                         <div class="servicio recuadro recuadro_servicio">
-                            <div class="izquierda">
-                                <p>louislam/uptime-kuma</p>
-                                <p><a href="https://estado.chemahosting.es" target="_blank">Público</a> • <a href="https://estado.chemahosting.es/dashboard" target="_blank">Administración</a></p>
+                            <div class="arriba">
+                                <div class="izquierda">
+                                    <p>Túnel TCP de Cloudflared</p>
+                                </div>
+                                <div class="derecha">
+                                    <p><span>https://localhost:8006</span> → <span>coruna1.chemahosting.es</span></p>
+                                </div>
                             </div>
-                            <div class="derecha">
-                                <p>
-                                    IP local: <span>DHCP</span> • 
-                                    IP NetBird: <span>172.16.0.53</span>
-                                </p>
-                                <p>Tipo: <span>LXC</span> • Puerto: <span>3001</span></p>
+                        </div>
+                        <div class="servicio recuadro recuadro_servicio">
+                            <div class="arriba">
+                                <div class="izquierda">
+                                    <p>louislam/uptime-kuma</p>
+                                    <p><a href="https://estado.chemahosting.es" target="_blank">Público</a> • <a href="https://estado.chemahosting.es/dashboard" target="_blank">Administración</a></p>
+                                </div>
+                                <div class="derecha">
+                                    <p>
+                                        IP local: <span>DHCP</span> • 
+                                        IP NetBird: <span>172.16.0.53</span>
+                                    </p>
+                                    <p>Tipo: <span>LXC</span> • Puerto: <span>3001</span></p>
+                                </div>
+                            </div>
+
+                            <div class="servicio recuadro recuadro_servicio">
+                                <div class="arriba">
+                                    <div class="izquierda">
+                                        <p>Túnel TCP de Cloudflared</p>
+                                    </div>
+                                    <div class="derecha">
+                                        <p><span>http://localhost:3001</span> → <span>estado.chemahosting.es</span></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -82,61 +106,80 @@
 
                         <p style="text-align: left;">Servicio(s):</p>
                         <div class="servicio recuadro recuadro_servicio">
-                            <div class="izquierda">
-                                <p>favonia/cloudflare-ddns</p>
-                            </div>
-                            <div class="derecha">
-                                <p>IP local: <span>DHCP</span></p>
-                                <p>Tipo: <span>Docker</span></p>
-                            </div>
-                        </div>
-                        <div class="servicio recuadro recuadro_servicio">
-                            <div class="izquierda">
-                                <p>pterodactyl-panel</p>
-                                <p><a href="https://panel.chemahosting.es" target="_blank">Panel de gestión</a></p>
-                            </div>
-                            <div class="derecha">
-                                <p>
-                                    IP local: <span>192.168.5.36</span> • 
-                                    IP NetBird: <span>172.16.0.200</span>
-                                </p>
-                                <p>Tipo: <span>LXC</span> • Puerto: <span>80</span></p>
+                            <div class="arriba">
+                                <div class="izquierda">
+                                    <p>favonia/cloudflare-ddns</p>
+                                </div>
+                                <div class="derecha">
+                                    <p>Tipo: <span>Docker</span></p>
+                                </div>
                             </div>
                         </div>
                         <div class="servicio recuadro recuadro_servicio">
-                            <div class="izquierda">
-                                <p>pterodactyl-wings</p>
+                            <div class="arriba">
+                                <div class="izquierda">
+                                    <p>Túnel TCP de Cloudflared</p>
+                                </div>
+                                <div class="derecha">
+                                    <p><span>https://localhost:8006</span> → <span>malaga1.chemahosting.es</span></p>
+                                </div>
                             </div>
-                            <div class="derecha">
-                                <p>
-                                    IP local: <span>192.168.5.37</span> • 
-                                    IP NetBird: <span>172.16.0.201</span>
-                                </p>
-                                <p>Tipo: <span>LXC</span> • Puertos de servicio: <span>49950-49999</span></p>
+                        </div>
+                        <div class="servicio recuadro recuadro_servicio">
+                            <div class="arriba">
+                                <div class="izquierda">
+                                    <p>pterodactyl-panel</p>
+                                    <p><a href="https://panel.chemahosting.es" target="_blank">Panel de gestión</a></p>
+                                </div>
+                                <div class="derecha">
+                                    <p>
+                                        IP local: <span>192.168.5.36</span> • 
+                                        IP NetBird: <span>172.16.0.200</span>
+                                    </p>
+                                    <p>Tipo: <span>LXC</span> • Puerto: <span>80</span></p>
+                                </div>
+                            </div>
+
+                            <div class="servicio recuadro recuadro_servicio">
+                                <div class="arriba">
+                                    <div class="izquierda">
+                                        <p>Túnel TCP de Cloudflared</p>
+                                    </div>
+                                    <div class="derecha">
+                                        <p><span>http://localhost:80</span> → <span>panel.chemahosting.es</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="servicio recuadro recuadro_servicio">
+                            <div class="arriba">
+                                <div class="izquierda">
+                                    <p>pterodactyl-wings</p>
+                                </div>
+                                <div class="derecha">
+                                    <p>
+                                        IP local: <span>192.168.5.37</span> • 
+                                        IP NetBird: <span>172.16.0.201</span>
+                                    </p>
+                                    <p>Tipo: <span>LXC</span> • Puertos de servicio: <span>49950-49999</span></p>
+                                </div>
                             </div>
                         </div>
 
                     </div>
 
                     <div class="nodo_red recuadro recuadro_nodo">
-                        <div class="encabezado_nodo">
-                            <p class="nombre">Cloudflare</p>
+                        <p style="text-align: left;">Otros servicio(s):</p>
+
+                        <div class="servicio recuadro recuadro_servicio">
+                            <div class="izquierda">
+                                <p>La gestión DNS para el dominio "<a href="https://www.chemahosting.es" target="_blank">chemahosting.es</a>" se realiza mediante <a href="https://www.cloudflare.com/es-es/" target="_blank">Cloudflare</a>.</p>
+                            </div>
                         </div>
 
-                        <p style="text-align: left;">Servicio(s):</p>
                         <div class="servicio recuadro recuadro_servicio">
                             <div class="izquierda">
-                                <p>Gestión DNS para el dominio <a href="https://www.chemahosting.es/" target="_blank">chemahosting.es</a></p>
-                            </div>
-                        </div>
-                        <div class="servicio recuadro recuadro_servicio">
-                            <div class="izquierda">
-                                <p>Worker para la <a href="https://www.chemahosting.es/" target="_blank">página web</a></p>
-                            </div>
-                        </div>
-                        <div class="servicio recuadro recuadro_servicio">
-                            <div class="izquierda">
-                                <p>Túneles + Certificado TLS para todos los servicios web del clúster</p>
+                                <p>El código fuente de la página web "<a href="https://www.chemahosting.es" target="_blank">www.chemahosting.es</a>" se aloja en un repositorio <a href="https://github.com/Chemahosting/www.chemahosting.es" target="_blank">GitHub</a> y se despliega automáticamente mediante un Worker Build de <a href="https://www.cloudflare.com/es-es/" target="_blank">Cloudflare</a>.</p>
                             </div>
                         </div>
 
