@@ -42,30 +42,39 @@ header a:hover{border-bottom: 3px solid white;}
     .central .contenido{width: 100% !important;}
 }
 
-.bloque_mapa_red{width: 60vw; display: flex; flex-direction: column; gap: 40px;}
-.bloque_mapa_red .encabezado_nodo{display: flex; flex-direction: row; justify-content: space-between;}
-.bloque_mapa_red .encabezado_nodo .derecha{text-align: right;}
-.bloque_mapa_red .nombre{font-weight: bold;}
-.bloque_mapa_red .IPs span, .bloque_mapa_red .servicio .derecha span{color: rgb(146, 147, 148); user-select: all;}
-.bloque_mapa_red .recuadro{border: 1px solid transparent; display: flex; flex-direction: column; gap: 20px; padding: 20px;}
-.bloque_mapa_red .recuadro_nodo{border-color: gray;}
-.bloque_mapa_red .recuadro_servicio{border-color: rgba(82, 82, 82, 0.5);}
-.bloque_mapa_red .recuadro_servicio:hover:not(.bloque_mapa_red .recuadro_servicio .recuadro_servicio:hover){border-color: rgba(173, 216, 230, 0.5) !important;}
-.bloque_mapa_red .recuadro_servicio .arriba{display: flex; flex-direction: row; justify-content: space-between;}
-.bloque_mapa_red .recuadro_servicio .izquierda{text-align: left; display: flex; flex-direction: column; gap: 10px;}
-.bloque_mapa_red .recuadro_servicio .derecha{text-align: right; display: flex; flex-direction: column; justify-content: center;}
+.bloque_topologia_red{display: flex; flex-direction: column; gap: 0; justify-content: center; align-items: center; width: 90vw;}
 
-@media screen and (max-width: 1250px) {
-   .bloque_mapa_red{width: 80vw;}
-}
-@media screen and (max-width: 900px) {
-   .bloque_mapa_red{width: 95vw;}
-}
-@media screen and (max-width: 680px) {
-    .bloque_mapa_red .encabezado_nodo, .bloque_mapa_red .recuadro_servicio{flex-direction: column; justify-content: center; gap: 20px;}
-    .nodo_red *{text-align: center !important;}
-    .bloque_mapa_red .encabezado_nodo .derecha{text-align: center;}
-}
+.bloque_topologia_red .linea-separadora{height: 25px;}
+.bloque_topologia_red .linea-separadora-vertical{width: 0.1px; background-color: gray;}
+.bloque_topologia_red .linea-separadora-vertical-dashed{width: 0.1px; border-left: 0.1px dashed gray;}
+.bloque_topologia_red .linea-separadora-horizontal-2-nodos-arriba{width: 75%; border: 1px solid gray; border-bottom: none;}
+.bloque_topologia_red .linea-separadora-horizontal-2-nodos-arriba-dashed{width: 75%; border: 1px dashed gray; border-bottom: none;}
+.bloque_topologia_red .linea-separadora-horizontal-2-nodos-abajo-dashed{width: 75%; border: 1px dashed gray; border-top: none;}
+.bloque_topologia_red .linea-separadora-horizontal-2-nodos-central{width: 75%; border: 1px solid gray; border-bottom: none; border-top: none;}
+.bloque_topologia_red .linea-separadora-horizontal-2-nodos-central-dashed{width: 75%; border: 1px dashed gray; border-bottom: none; border-top: none;}
+.bloque_topologia_red .linea-separadora-horizontal-2-nodos-central-solo-izquierda{width: 75%; border-left: 1px solid gray;}
+.bloque_topologia_red .linea-separadora-horizontal-2-nodos-central-solo-derecha{width: 75%; border-right: 1px solid gray;}
+
+.bloque_topologia_red .nodos_red{display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; width: 100%;}
+
+.bloque_topologia_red .nota-doble{display: flex; justify-content: space-between; width: 75%; height: 0; margin-bottom: 35px;}
+.bloque_topologia_red .nota-doble p{margin: 0; padding: 0 10px; background-color: #191919; line-height: 1;}
+.bloque_topologia_red .nota-doble p:first-child{transform: translate(-50%, -50%);}
+.bloque_topologia_red .nota-doble p:last-child{transform: translate(50%, -50%);}
+
+.bloque_topologia_red .nodo_red{padding: 15px; border: 1px solid gray; width: 45%; text-align: left;}
+.bloque_topologia_red .nodo_red .nombre-nodo{font-weight: bold; font-family: "FiraCode";}
+.bloque_topologia_red .nodo_red.vacio{background: transparent; border: none;}
+.bloque_topologia_red .nodo_red.proxmox{background-color: #191919; border: 2px solid lightblue;}
+.bloque_topologia_red .nodo_red.proxmox .nombre-nodo, .bloque_topologia_red .nodo_red.proxmox .nombre-nodo *{color: lightblue;}
+.bloque_topologia_red .nodo_red.netbird{background-color: #191919; border: 2px solid green;}
+.bloque_topologia_red .nodo_red.netbird .nombre-nodo, .bloque_topologia_red .nodo_red.netbird .nombre-nodo *{color: green;}
+.bloque_topologia_red .nodo_red.cloudflare{background-color: #191919; border: 2px solid orange;}
+.bloque_topologia_red .nodo_red.cloudflare .nombre-nodo, .bloque_topologia_red .nodo_red.cloudflare .nombre-nodo *{color: orange;}
+.bloque_topologia_red .nodo_red.servicio .nombre-nodo, .bloque_topologia_red .nodo_red.servicio .nombre-nodo *{color: white;}
+
+.bloque_topologia_red .nodo_red .detalles-nodo{padding-top: 15px; font-size: 14px;}
+.bloque_topologia_red .nodo_red .detalles-nodo span{color: gray; user-select: all; font-family: "FiraCode";}
 
 .contenido-privacidad{text-align: justify; width: 100%;}
 
