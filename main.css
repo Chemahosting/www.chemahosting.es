@@ -42,7 +42,7 @@ header a:hover{border-bottom: 3px solid white;}
     .central .contenido{width: 100% !important;}
 }
 
-.contenedor-scroll-red{width: 1300px; overflow-x: auto; -webkit-overflow-scrolling: touch;  padding-bottom: 15px;}
+.contenedor-scroll-red{width: 90vw; overflow-x: auto; -webkit-overflow-scrolling: touch;  padding-bottom: 15px;}
 .bloque_topologia_red{display: flex; flex-direction: column; gap: 0; justify-content: center; align-items: center; width: 100%;}
 
 .bloque_topologia_red .linea-separadora{height: 25px;}
@@ -76,9 +76,14 @@ header a:hover{border-bottom: 3px solid white;}
 
 .bloque_topologia_red .nodo_red .detalles-nodo{padding-top: 15px; font-size: 14px;}
 .bloque_topologia_red .nodo_red .detalles-nodo span{color: gray; user-select: all; font-family: "FiraCode";}
+.bloque_topologia_red .nodo_red .detalles-nodo img{height: 15px; width: min-content;}
 
 @media screen and (max-width: 1245px) {
     .bloque_topologia_red{width: 1300px; min-width: 1300px;}
+}
+
+@media screen and (min-width: 1540px) {
+    .contenedor-scroll-red{width: 1300px !important;}
 }
 
 .contenido-privacidad{text-align: justify; width: 100%;}
