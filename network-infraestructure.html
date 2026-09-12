@@ -42,9 +42,7 @@
                                 <p class="detalles-nodo">
                                     Dirección de red: <span>172.16.0.0/24</span>
                                     <br>
-                                    La conexión de los nodos del clúster se realiza mediante una VPN de tipo <span>Mesh</span>.
-                                    <br>
-                                    Ventaja: Conexión sin la necesidad de que todos los nodos estén encendidos.
+                                    La conexión de los nodos del clúster se realiza mediante una VPN de tipo <span>Mesh</span>, permitiendo una conexión estable sin la necesidad de que todos los nodos estén encendidos.
                                 </p>
 
                             </div>
@@ -58,7 +56,7 @@
 
                         <div class="linea-separadora linea-separadora-vertical-dashed"></div>
 
-                        <div class="nota">
+                        <div class="nota internet">
                             <p>Internet</p>
                         </div>
 
@@ -72,7 +70,7 @@
                         <div class="nota-triple">
                             <p>Gateway<br>(10.200.0.1)</p>
                             <p class="middle-child">Gateway<br>(192.168.5.254)</p>
-                            <p>Gateway<br>(192.168.1.1)</p>
+                            <p>Gateway<br>(XXX.XXX.X.X)</p>
                         </div>
 
                         <div class="flex-lineas-separadoras">
@@ -89,12 +87,12 @@
                                     IP Local: <span>10.200.0.2/16</span> • 
                                     IP NetBird: <span>172.16.0.100/24</span>
                                 </p>
+                                
                                 <p class="detalles-nodo">
-                                    Túnel de Cloudflare: <span>https://localhost:8006</span> → <span>coruna1.chemahosting.es</span>
-                                    <br>
-                                    Protección: Zero Trust + OAuth
+                                    Túnel de Cloudflare (Zero Trust + OAuth):<br><span>https://localhost:8006</span> → <span>coruna1.chemahosting.es</span>
                                 </p>
-                                <p class="detalles-nodo">
+
+                                <p class="detalles-nodo" style="user-select: none;">
                                     <img src="https://estado.chemahosting.es/api/badge/4/status?style=plastic" />
                                     <img src="https://estado.chemahosting.es/api/badge/4/avg-response?style=plastic" />
                                     <img src="https://estado.chemahosting.es/api/badge/4/uptime?style=plastic" />
@@ -108,12 +106,12 @@
                                     IP Local: <span>192.168.5.35/23</span> • 
                                     IP NetBird: <span>172.16.0.102/24</span>
                                 </p>
+
                                 <p class="detalles-nodo">
-                                    Túnel de Cloudflare: <span>https://localhost:8006</span> → <span>malaga1.chemahosting.es</span>
-                                    <br>
-                                    Protección: Zero Trust + OAuth
+                                    Túnel de Cloudflare (Zero Trust + OAuth):<br><span>https://localhost:8006</span> → <span>malaga1.chemahosting.es</span>
                                 </p>
-                                <p class="detalles-nodo">
+
+                                <p class="detalles-nodo" style="user-select: none;">
                                     <img src="https://estado.chemahosting.es/api/badge/5/status?style=plastic" />
                                     <img src="https://estado.chemahosting.es/api/badge/5/avg-response?style=plastic" />
                                     <img src="https://estado.chemahosting.es/api/badge/5/uptime?style=plastic" />
@@ -125,15 +123,17 @@
 
                                 <p class="detalles-nodo">
                                     IP Local: <span>X</span> • 
-                                    IP NetBird: <span>172.16.0.X/24</span>
+                                    IP NetBird: <span>172.16.0.103/24</span>
                                 </p>
+
                                 <p class="detalles-nodo">
-                                    Túnel de Cloudflare: <span>https://localhost:8006</span> → <span>malaga2.chemahosting.es</span>
-                                    <br>
-                                    Protección: Zero Trust + OAuth
+                                    Túnel de Cloudflare (Zero Trust + OAuth):<br><span>https://localhost:8006</span> → <span>malaga2.chemahosting.es</span>
                                 </p>
-                                <p class="detalles-nodo">
-                                    
+
+                                <p class="detalles-nodo" style="user-select: none;">
+                                    <img src="https://estado.chemahosting.es/api/badge/20/status?style=plastic" />
+                                    <img src="https://estado.chemahosting.es/api/badge/20/avg-response?style=plastic" />
+                                    <img src="https://estado.chemahosting.es/api/badge/20/uptime?style=plastic" />
                                 </p>
                             </div>
 
@@ -175,12 +175,11 @@
                                     IP NetBird: <span>172.16.0.53/24</span>
                                 </p>
                                 <p class="detalles-nodo">
-
-                                    Túnel de Cloudflare: <span>http://localhost:3001</span> → <span>estado.chemahosting.es</span>
-                                    <br>
+                                    Túnel de Cloudflare:<br><span>http://localhost:3001</span> → <span>estado.chemahosting.es</span>
+                                    <br><br>
                                     Paneles: <a href="https://estado.chemahosting.es" target="_blank">público</a> • <a href="https://estado.chemahosting.es/dashboard" target="_blank">privado</a>
                                 </p>
-                                <p class="detalles-nodo">
+                                <p class="detalles-nodo" style="user-select: none;">
                                     <img src="https://estado.chemahosting.es/api/badge/4/status?style=plastic" />
                                 </p>
                             </div>
@@ -193,11 +192,11 @@
                                     IP NetBird: <span>172.16.0.200/24</span>
                                 </p>
                                 <p class="detalles-nodo">
-                                    Túnel de Cloudflare: <span>https://localhost:443</span> → <span>panel.chemahosting.es</span>
-                                    <br>
+                                    Túnel de Cloudflare:<br><span>https://localhost:443</span> → <span>panel.chemahosting.es</span>
+                                    <br><br>
                                     Panel: <a href="https://panel.chemahosting.es" target="_blank">público</a>
                                 </p>
-                                <p class="detalles-nodo">
+                                <p class="detalles-nodo" style="user-select: none;">
                                     <img src="https://estado.chemahosting.es/api/badge/7/status?style=plastic" />
                                     <img src="https://estado.chemahosting.es/api/badge/7/avg-response?style=plastic" />
                                     <img src="https://estado.chemahosting.es/api/badge/7/uptime?style=plastic" />
@@ -209,18 +208,25 @@
 
                                 <p class="detalles-nodo">
                                     IP Local: <span>X</span> • 
-                                    IP NetBird: <span>172.16.0.X/24</span>
+                                    IP NetBird: <span>172.16.0.202/24</span>
                                 </p>
+
                                 <p class="detalles-nodo">
-                                    <b>Tráfico juego</b>: DDNS + Port Forwarding (<span>49950-49997</span> → <span>49950-49997</span>).
+                                    DDNS + Port Forwarding:
                                     <br>
-                                    <b>SFTP</b>: DDNS + Port Forwarding (<span>49998</span> → <span>49998</span>).
+                                    - <b>Tráfico juego</b>: <span>49950-49997</span> → <span>49950-49997</span>.
                                     <br>
-                                    <b>API / Daemon</b>: DDNS + Port Forwarding (<span>49999</span> → <span>49999</span>).
+                                    - <b>SFTP</b>: <span>49998</span> → <span>49998</span>.
+                                    <br>
+                                    - <b>API / Daemon</b>: <span>49999</span> → <span>49999</span>.
                                 </p>
-                                <p class="detalles-nodo">
-                                    
+
+                                <p class="detalles-nodo" style="user-select: none;">
+                                    <img src="https://estado.chemahosting.es/api/badge/19/status?style=plastic" />
+                                    <img src="https://estado.chemahosting.es/api/badge/19/avg-response?style=plastic" />
+                                    <img src="https://estado.chemahosting.es/api/badge/19/uptime?style=plastic" />
                                 </p>
+
                             </div>
 
                         </div>
@@ -241,14 +247,18 @@
                                     IP Local: <span>192.168.5.37/23</span> • 
                                     IP NetBird: <span>172.16.0.201/24</span>
                                 </p>
+
                                 <p class="detalles-nodo">
-                                    <b>Tráfico juego</b>: DDNS + Port Forwarding (<span>49950-49997</span> → <span>49950-49997</span>).
+                                    DDNS + Port Forwarding:
                                     <br>
-                                    <b>SFTP</b>: DDNS + Port Forwarding (<span>49998</span> → <span>49998</span>).
+                                    - <b>Tráfico juego</b>: <span>49950-49997</span> → <span>49950-49997</span>.
                                     <br>
-                                    <b>API / Daemon</b>: DDNS + Port Forwarding (<span>49999</span> → <span>49999</span>).
+                                    - <b>SFTP</b>: <span>49998</span> → <span>49998</span>.
+                                    <br>
+                                    - <b>API / Daemon</b>: <span>49999</span> → <span>49999</span>.
                                 </p>
-                                <p class="detalles-nodo">
+
+                                <p class="detalles-nodo" style="user-select: none;">
                                     <img src="https://estado.chemahosting.es/api/badge/3/status?style=plastic" />
                                     <img src="https://estado.chemahosting.es/api/badge/3/avg-response?style=plastic" />
                                     <img src="https://estado.chemahosting.es/api/badge/3/uptime?style=plastic" />
